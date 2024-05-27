@@ -86,6 +86,7 @@ public class BoardController {
         return ResultDto.resultDto(code,msg,p.getBoardIndex());
     }
 
+
     @DeleteMapping("{board_index}")
     @Operation(summary = "보드 삭제", description = "item이 없어야 삭제 가능")
     public ResultDto<Integer> delBoard(@PathVariable("board_index") long boardIndex) {
